@@ -1,0 +1,328 @@
+@import "nullstyle";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$color-gold: #ada074;
+$color-light-gray: #f0f0f0;
+$color-gray: #8e8d8d;
+$color-dark-gray: #3c3c3c;
+
+@mixin title-line($margin-top, $margin-bottom, $color) {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 81px;
+    margin: $margin-top auto $margin-bottom;
+    background-color: $color;
+}
+
+body {
+  position: absolute;
+  width: 1920px;
+  background: url("../img/BG-Header.png") 0 0/ 1920px auto no-repeat, url("../img/BG-partners\ \(3\).png") 0 3325px/ 1920px auto no-repeat;
+}
+
+.subtitle {
+  color: $color-gray;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 70px;
+}
+
+.container {
+  position: relative;
+  width: auto;
+  margin: 0 510px;
+  text-align: center;
+  font-family: Lato;
+}
+
+.link {
+  color: black;
+}
+
+.choosed {
+  color: $color-gold;
+}
+
+.title {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.section-title {
+  font-weight: 700;
+}
+
+.button {
+  padding: 15px 39px 18px 42px;
+  border: 1px solid white;
+  background: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.header {
+  height: 1139px;
+  color: white;
+  &__logo {
+    margin: 165px auto 159px;
+    width: 195px;
+  }
+  &__title {
+    font-weight: 900;
+  }
+  &__subtitle {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 16px 0;
+    color: white;
+    line-height: 1;
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 105px;
+      margin: 50px auto 0;
+      background-color: white;
+    }
+  }
+  &__button {
+    margin: 227px 0 0;
+    color: white;
+  }
+  &-menu {
+    width: 422px;
+    margin: auto;
+    &:before {
+      content: "";
+      display: block;
+      height: 9px;
+      width: 9px;
+      border: 2px solid white;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      margin: 70px auto 153px;
+    }
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+  }
+}
+
+.about {
+  &__title {
+    margin: 130px 0 35px;
+    &:after {
+      @include title-line(35px, 0,black);
+    }
+  }
+  &__subtitle {
+    width: 688px;
+    margin: 0 auto;
+  }
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    .web, .ios, .marketing {
+      width: 260px;
+      .img {
+        width: 88px;
+        height: 88px;
+        border: 2px solid $color-light-gray;
+        border-radius: 50%; 
+        margin: 0 auto 40px;
+      }
+      .web__img {
+        background: url("../img/WEB.png") center center no-repeat;
+      }
+      .ios__img {
+        background: url("../img/IOS.png") center center no-repeat;
+      }
+      .marketing_img {
+        background: url("../img/marketing.png") 60% center no-repeat;
+      }
+    }
+    .title {
+      font-size: 23px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      margin-bottom: 37px;
+      span {
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+.portfolio {
+  padding: 108px 0 62px;
+  background-color: white;
+  width: 1920px;
+  margin-left: -510px;
+  &__title:after {
+    @include title-line(50px, 50px,black);
+  }
+  .portfolio-menu {
+    width: 294px;
+    margin: 0 auto 138px;
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 15px;
+      
+    }
+  }
+  &-container {
+    height: 1125px;
+    width: 1101px;
+    margin: 0 auto 65px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__content {
+      height: 363px;
+      width: 536px;
+      background-color: $color-light-gray;
+      flex-basis: 363px 536px;
+    }
+  }
+  &__button {
+      border: 1px solid black;
+  }
+}
+
+
+.partners {
+  height: 388px; 
+  &__title {
+    font-weight: 300;
+    color: white;
+    text-transform: none;
+    letter-spacing: 3px;
+    margin: 100px 0 95px;
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 584px;
+    margin:0 auto 104px;
+  }
+}
+
+.contact {
+  &__title:after {
+    @include title-line(47px, 120px,black);
+  }
+  &-container {
+    height: 345px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 102px;
+    .contact-form {
+      width: 382px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      text-transform: uppercase;
+      &__name, &__e-mail {
+        height: 65px;
+        width: 160px;
+        text-align: left;
+        display: inline-block;
+      }
+      &__name {
+        margin-right: 59px;
+      }
+      &__message {
+        margin-top: 56px;
+        text-align: left;
+      }
+      &__button {
+        display: block;
+        margin: 43px 0 102px auto;
+        font-weight: 700;
+        padding: 0;
+      }
+      input, textarea {
+        height: 36px;
+        background-color: $color-light-gray;
+        border-top: 1px solid black;
+        margin-top: 19px;
+      }
+      input{
+        width: 160px;
+      }
+      textarea {
+        height: 119px;
+        width: 382px;
+        resize: none;
+      }
+    }
+    .contact-information {
+      text-align: left;
+      width: 434px;
+      font-weight: 300;
+      &__text {
+        margin-bottom: 40px;
+        span {
+          font-weight: 700;
+        }
+      }
+      &__button {
+        height: 28px;
+        width: 28px;
+        font-size: 16px;
+        font-weight: 700;
+        padding: auto;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin: -15px 15px 15px 0;
+        background-color: white;
+      }
+      .f-button {
+        background: url("../img/Facebook.png") center center no-repeat;
+      }
+      .in-button {
+        background: url("../img/in.png") center center no-repeat;
+      }
+    }
+  }
+
+}
+
+.footer {
+  padding: 50px;
+  height: 274px;
+  width: 1920px;
+  margin-left: -511px;
+  background-color: $color-dark-gray;
+  &-menu {
+    width: 260px;
+    margin: 43px auto 34px;
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+    }
+    .link {
+     color: $color-gray;
+    }
+  }
+  p {
+    color: #555555;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="./source/style.css">
+  <title>BEM</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img class="header__logo" src="./img/logo.png" alt="logo">
+      <h2 class="header__title title">Clear, smart, attractive design</h2>
+      <h3 class="header__subtitle subtitle">for your app, logo, website</h3>
+      <button class="header__button button">read more</button>
+      <div class="header-menu menu">
+        <nav class="header-menu__menu">
+          <a class="choosed" href="#">home</a>
+          <a class="link" href="#">about us</a>
+          <a class="link" href="#">portfolio</a>
+          <a class="link" href="#">contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <h2 class="about__title section-title title">about</h2>
+        <h3 class="about__subtitle subtitle">We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW" factor.<br>
+        In our design process, we make sure to stay one step ahead of the latest trends,<br>
+        never forgetting to abide by key web standards.</h3>
+        <div class="about-container">
+          <div class="web">
+            <div class="web__img img"></div>
+            <h2 class="web__title title">web</h2>
+            <h3 class="web__subtitle subtitle">We tend to deliver unique and<br> functional design, through<br> innovation and creativity.</h3>
+          </div>
+          <div class="ios">
+            <div class="ios__img img"></div>
+            <h2 class="ios_title title"><span>i</span>os and android</h2>
+            <h3 class="ios__subtitle subtitle">We seek to bring new businesses and customers closer together through valuable insights and proper targeting.</h3>
+          </div>
+          <div class="marketing">
+            <div class="marketing_img img"></div>
+            <h2 class="marketing__title title">marketing</h2>
+            <h3 class="marketing__subtitle subtitle">We’ll help you establish the right goals<br> and build the right paths. Success depends<br> on setting the right intention.</h3>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <h2 class="portfolio__title section-title title">portfolio</h2>
+        <div class="portfolio-menu menu">
+          <nav class="portfolio-menu__menu">
+            <a class="choosed" href="#">all</a>
+            <a class="link" href="#">web</a>
+            <a class="link" href="#">apps</a>
+            <a class="link" href="#">other</a>
+          </nav>
+        </div>
+        <div class="portfolio-container">
+          <div class="portfolio-container__content"></div>
+          <div class="portfolio-container__content"></div>
+          <div class="portfolio-container__content"></div>
+          <div class="portfolio-container__content"></div>
+          <div class="portfolio-container__content"></div>
+          <div class="portfolio-container__content"></div>
+        </div>
+        <button class="portfolio__button button">read more</button>
+      </section>
+      <section class="partners">
+        <h2 class="partners__title title">Our partners</h2>
+        <div class="partners-container">
+          <img src="./img/logo 1.png" alt="" class="logo1">
+          <img src="./img/logo2.png" alt="" class="logo2">
+          <img src="./img/logo3.png" alt="" class="logo3">
+          <img src="./img/logo4.png" alt="" class="logo4">
+        </div>
+      </section>
+      <section class="contact">
+        <h2 class="contact__title section-title title">Contact</h2>
+        <div class="contact-container">
+          <div class="contact-form">
+            <form action="">
+              <div class="contact-form__name">
+                <label for="name">your name</label>
+                <input type="text" id="name">
+              </div>
+              <div class="contact-form__e-mail">
+                <label for="e-mail">your e-mail</label>
+                <input type="text" id="e-mail">
+              </div>
+              <div class="contact-form__message">
+                <label for="message">message</label>
+                <textarea id="message" cols="30" rows="10"></textarea>
+              </div>
+              <button class="contact-form__button button">send</button>
+            </form>
+          </div>
+          <div class="contact-information">
+            <p class="contact-information__text">Have an idea for a project? Just looking to<br> explore and see the possibilities?<br>I'm here to help.<br></p>
+            <p class="contact-information__text"><span>Postma Elena</span></p>
+            <button class="contact-information__button f-button"></button>
+            <button class="contact-information__button in-button"></button>
+            <p class="contact-information__text">e-mail: <span>postma.elena@gmail.com</span></p>
+          </div>
+        </div> 
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="./img/logo-footer.png" alt="" class="footer__logo">
+    <div class="footer-menu">
+      <nav class="footer-menu__menu menu">
+        <a class="link" href="#">Home</a>
+        <a class="link" href="#">Facebook</a>
+        <a class="link" href="#">Linkedin</a>
+        <a class="link" href="#">Contact</a>
+      </nav>
+    </div>
+    <p class="footer__text">© 2015. All Rights Reserved</p>
+    </footer>
+  </div>
+</body>
+</html>
